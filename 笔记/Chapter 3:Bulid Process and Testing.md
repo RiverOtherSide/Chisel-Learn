@@ -242,7 +242,3 @@ printf("dut: %d %d %d\n", io.a, io.b, io.out)
 
 
 
-
-
-### 3.3 Exercises
-

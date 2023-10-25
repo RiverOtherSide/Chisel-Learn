@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  : [module gcd]  Reference io is not fully initialized.[0m
+[0m[[0m[31merror[0m] [0m[0m   : io.busy <= mux(_T_8, mux(io.start, UInt<1>("h1"), VOID), mux(done, UInt<1>("h0"), VOID))[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrunMain[0m) firrtl.passes.CheckInitialization$RefNotInitializedException:  : [module gcd]  Reference io is not fully initialized.[0m
+[0m[[0m[31merror[0m] [0m[0m   : io.busy <= mux(_T_8, mux(io.start, UInt<1>("h1"), VOID), mux(done, UInt<1>("h0"), VOID))[0m

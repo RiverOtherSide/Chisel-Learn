@@ -1,1 +1,27 @@
 1697722435495:;set _root_.scala.collection.Seq(historyPath := None,shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/private/var/folders/pb/7b8skv652n158nrv8l250d500000gn/T/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/Users/tangzhijiang/Library/Application Support/JetBrains/IntelliJIdea2023.2/plugins/Scala/repo/org/jetbrains/scala/sbt-structure-extractor_2.12_1.0/2023.1.0/sbt-structure-extractor-2023.1.0.jar" org.jetbrains.sbt.CreateTasks;preferScala2;*/*:dumpStructure
+1698140924861:runMain adderMain
+1698142282419:testOnly adderTest
+1698142357451:test:runMain adderTest
+1698142394371:testOnly adderTest
+1698142413989:testOnly adderTest -- -DwiteVcd=1
+1698142444854:testOnly adderTest -- -DwriteVcd=1
+1698161293150:runMain adderMain
+1698161415787:testOnly adderTest -- -DwriteVcd=1
+1698240958130:testOnly gcdTest
+1698242107142:testOnly adderTest
+1698243186311:testOnly gcdTest
+1698243203305:testOnly adderTest
+1698243454722:[A
+1698243456888:testOnly adderTest
+1698245301533:[A
+1698245307941:testOnly adderTest
+1698246897460:testOnly gcdTest
+1698247379786:testOnly adderTest
+1698247444912:testOnly gcdTest
+1698248796040:runMain Main
+1698248827512:last runMain
+1698248959164:runMain Main
+1698248984599:testOnly gcdTest
+1698250177378:runMain Main
+1698250186366:testOnly gcdTest
+1698250459151:testOnly gcdTest -- -DwriteVcd=1

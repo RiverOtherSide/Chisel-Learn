@@ -1,3 +1,3 @@
-[debug] not up to date. inChanged = true, force = false
-[debug] Updating ProjectRef(uri("file:/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel实现/Gcd/template/project/"), "template-build")...
-[debug] Done updating ProjectRef(uri("file:/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel实现/Gcd/template/project/"), "template-build")
+[0m[[0m[0mdebug[0m] [0m[0mnot up to date. inChanged = true, force = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mUpdating ProjectRef(uri("file:/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel实现/Gcd/Chisel/project/"), "chisel-build")...[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone updating ProjectRef(uri("file:/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel实现/Gcd/Chisel/project/"), "chisel-build")[0m
