@@ -110,6 +110,8 @@ module gcd(clock,start,a,b,busy,o);
 		  begin
 		  y[N-2:0] = y[N-1:1];
 		  y[N-1] = 0;
+		//   y = z
+		//   z = y+1
 		  end
 	      2'b11: begin
 		  if (x < y) begin
@@ -134,12 +136,12 @@ module gcd(clock,start,a,b,busy,o);
     always @(posedge clock) begin
 	if (~busy) begin
 	    if (start) begin
-		busy = 1;
+			busy = 1;
 	    end // if (start)
 	end // if (~busy)
 	else begin
 	    if (done) begin
-		busy = 0;
+			busy = 0;
 	    end
 	end // else: !if(~busy)
     end // always @ (posedge clock)

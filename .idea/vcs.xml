@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/chisel-bootcamp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test/chisel-template" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/案例练习/Chisel实现/Gcd/Chisel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/案例练习/Chisel实现/chisel-empty1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/案例练习/Chisel实现/template" vcs="Git" />
+  </component>
+</project>
