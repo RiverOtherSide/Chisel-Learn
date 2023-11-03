@@ -1,6 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel实现/Gcd/Chisel/src/main/scala/main.scala:44:30: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : Int(1)[0m
-[0m[[0m[31merror[0m] [0m[0m required: chisel3.UInt[0m
-[0m[[0m[31merror[0m] [0m[0m      is("b00".U){lsb := lsb+1}[0m
-[0m[[0m[31merror[0m] [0m[0m                             ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
