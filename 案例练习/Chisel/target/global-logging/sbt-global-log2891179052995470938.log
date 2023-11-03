@@ -1,0 +1,30 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly philoTest, Some(b00aa442-9513-4249-ba48-0ff5acc40a99), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mGetting the hostname MacBook-Pro.local was slow (5005.13625 ms). This is likely because the computer's hostname is not set. You can set the hostname with the command: scutil --set HostName "$(scutil --get LocalHostName).local".[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mphiloTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mphilo[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should pass *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  chisel3.internal.ChiselException: operand 'philo.regph1: Reg[UInt<2>]' is not visible from the current module[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at ... ()[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at philosopher.$anonfun$state$2(philo.scala:15)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chisel3.internal.prefix$.apply(prefix.scala:48)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at philosopher.$anonfun$state$1(philo.scala:15)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chisel3.internal.plugin.package$.autoNameRecursively(package.scala:33)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at philosopher.<init>(philo.scala:15)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at philo.$anonfun$ph1$2(philo.scala:42)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chisel3.Module$.do_apply(Module.scala:53)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at philo.$anonfun$ph1$1(philo.scala:42)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at chisel3.internal.plugin.package$.autoNameRecursively(package.scala:33)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 267 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 0, failed 1, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m*** 1 TEST FAILED ***[0m[0m
+[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
+[0m[[0m[31merror[0m] [0m[0m	philoTest[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mtestOnly[0m) sbt.TestsFailedException: Tests unsuccessful[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 5 s, completed 2023-11-3 0:10:59[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

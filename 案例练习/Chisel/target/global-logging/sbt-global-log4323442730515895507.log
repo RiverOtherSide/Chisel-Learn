@@ -1,0 +1,17 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(testOnly philoTest, Some(b3eadf5a-3ec2-486e-8390-5e83f64d4775), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / testOnly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mGetting the hostname MacBook-Pro.local was slow (5017.000625 ms). This is likely because the computer's hostname is not set. You can set the hostname with the command: scutil --set HostName "$(scutil --get LocalHostName).local".[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mphiloTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mphilo[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should pass[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 1 second, 307 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 7 s, completed 2023-11-3 0:13:59[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
