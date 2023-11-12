@@ -23,7 +23,7 @@ module philosopher(clk, out, left, right, init);
     input left, right, init;
     State wire left, right, init;
     State wire  out;
-    State reg self;
+    State reg  self;
 
     wire      coin;
     assign coin = $ND(0,1);

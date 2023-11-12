@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chisel.iml" filepath="$PROJECT_DIR$/.idea/modules/chisel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chisel-build.iml" filepath="$PROJECT_DIR$/.idea/modules/chisel-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/template.iml" filepath="$PROJECT_DIR$/.idea/modules/template.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/template-build.iml" filepath="$PROJECT_DIR$/.idea/modules/template-build.iml" />
     </modules>

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ScalaCompilerConfiguration">
     <profile name="sbt 1" modules="template_4395" />
-    <profile name="sbt 2" modules="template">
+    <profile name="sbt 2" modules="chisel,template">
       <option name="reflectiveCalls" value="true" />
       <option name="featureWarnings" value="true" />
       <plugins>

@@ -5,8 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f272aeae-832d-463f-9b98-ad029872bfcc" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/scala/empty/Add.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/empty/AddTester.scala" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$a3ecc3c13d81bdf44008$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$a3ecc3c13d81bdf44008.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/target/config-classes/$cbaa0112b4b8a1203561.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../教材/chisel-book-chinese.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../教材/chisel-book.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.bsp/sbt.json" beforeDir="false" afterPath="$PROJECT_DIR$/.bsp/sbt.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/active.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$1bb2a00443f7c38e98a6$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$cbaa0112b4b8a1203561$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$1bb2a00443f7c38e98a6.cache" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$0264548669f25a3e8804.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$1bb2a00443f7c38e98a6.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$caea8e4328fd602c0f57.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b0bea08679d3ac9179c5$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$0264548669f25a3e8804$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b0bea08679d3ac9179c5.cache" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$471f07f57142b4285b59.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b0bea08679d3ac9179c5.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$0264548669f25a3e8804.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e7a917a82850c12c8843$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$471f07f57142b4285b59$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e7a917a82850c12c8843.cache" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$a3ecc3c13d81bdf44008.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e7a917a82850c12c8843.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$c65489d8ccf4208ce545.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$f0b203723bd884406895$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$caea8e4328fd602c0f57$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$f0b203723bd884406895.cache" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$c65489d8ccf4208ce545.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$f0b203723bd884406895.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$cbaa0112b4b8a1203561.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$fc6769edb226a276df8a$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$c65489d8ccf4208ce545$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$fc6769edb226a276df8a.cache" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$caea8e4328fd602c0f57.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$fc6769edb226a276df8a.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$471f07f57142b4285b59.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/copyResources/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/incOptions/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/incOptions/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/.history3" beforeDir="false" afterPath="$PROJECT_DIR$/target/.history3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vis-verilog-models-1.3/Philo/philo4.v" beforeDir="false" afterPath="$PROJECT_DIR$/../vis-verilog-models-1.3/Philo/philo4.v" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Chapter 2:Basic Components.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Chapter 3:Bulid Process and Testing.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Chapter 4:Components.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Chapter 5:Combinational Building Blocks.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/Scala.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/assets/image-20231016115008091.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/assets/image-20231016232347610.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/assets/image-20231024234029285.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/assets/image-20231025000127670.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/assets/image-20231101205703462.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/assets/image-20231101210915414.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/assets/image-20231101215704113.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../笔记/iverlog.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +58,7 @@
     </projectState>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -27,9 +66,9 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2Wz4VhRd9adoRaOnscI8sHaKqJq" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -40,7 +79,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -54,6 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697722100349</updated>
       <workItem from="1697722102896" duration="281000" />
+      <workItem from="1699273211096" duration="967000" />
     </task>
     <servers />
   </component>
