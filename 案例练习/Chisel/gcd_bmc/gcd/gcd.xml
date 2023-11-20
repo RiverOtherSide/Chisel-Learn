@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2023-11-16T22:18:55" hostname="MacBook-Pro.local" package="gcd" id="0" name="default" tests="2" errors="0" failures="2" time="0" skipped="1">
+<properties>
+<property name="os" value="Darwin"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="FAIL"/>
+</properties>
+<testcase classname="default" name="build execution" time="0">
+<failure type="FAIL" message="Task returned status FAIL." />
+</testcase>
+<testcase classname="default" name="Property ASSERT in gcd at gcd.sv:165.54-166.28" time="0" type="ASSERT" location="gcd.sv:165.54-166.28" id="$assert$gcd.sv:165$67" tracefile="engine_0/trace.vcd">
+<failure type="ASSERT" message="Property ASSERT in gcd at gcd.sv:165.54-166.28 failed. Trace file: engine_0/trace.vcd" />
+</testcase>
+<testcase classname="default" name="Property ASSERT in gcd at gcd.sv:169.55-170.22" time="0" type="ASSERT" location="gcd.sv:169.55-170.22" id="$assert$gcd.sv:169$68">
+<skipped />
+</testcase>
+<system-out>SBY 22:18:54 [gcd] Copy '/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/gcd_bmc/gcd.sv' to '/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/gcd_bmc/gcd/src/gcd.sv'.
+SBY 22:18:54 [gcd] Copy '/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/gcd_bmc/ResetCounter.sv' to '/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/gcd_bmc/gcd/src/ResetCounter.sv'.
+SBY 22:18:54 [gcd] engine_0: smtbmc boolector
+SBY 22:18:54 [gcd] base: starting process &quot;cd gcd/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 22:18:54 [gcd] base: finished (returncode=0)
+SBY 22:18:54 [gcd] prep: starting process &quot;cd gcd/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 22:18:54 [gcd] prep: finished (returncode=0)
+SBY 22:18:54 [gcd] smt2: starting process &quot;cd gcd/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 22:18:54 [gcd] smt2: finished (returncode=0)
+SBY 22:18:54 [gcd] engine_0: starting process &quot;cd gcd; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 22:18:55 [gcd] engine_0: ##   0:00:00  Solver: boolector
+SBY 22:18:55 [gcd] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 22:18:55 [gcd] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 22:18:55 [gcd] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 22:18:55 [gcd] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 22:18:55 [gcd] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 22:18:55 [gcd] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 22:18:55 [gcd] engine_0: ##   0:00:00  BMC failed!
+SBY 22:18:55 [gcd] engine_0: ##   0:00:00  Assert failed in gcd: gcd.sv:165.54-166.28 ($assert$gcd.sv:165$67)
+SBY 22:18:55 [gcd] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 22:18:55 [gcd] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 22:18:55 [gcd] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 22:18:55 [gcd] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 22:18:55 [gcd] engine_0: ##   0:00:00  Status: failed
+SBY 22:18:55 [gcd] engine_0: finished (returncode=1)
+SBY 22:18:55 [gcd] engine_0: Status returned by engine: FAIL
+SBY 22:18:55 [gcd] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 22:18:55 [gcd] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 22:18:55 [gcd] summary: engine_0 (smtbmc boolector) returned FAIL
+SBY 22:18:55 [gcd] summary: counterexample trace: gcd/engine_0/trace.vcd
+SBY 22:18:55 [gcd] summary:   failed assertion gcd.$assert$gcd.sv:165$67 at gcd.sv:165.54-166.28 in step 2
+SBY 22:18:55 [gcd] DONE (FAIL, rc=2)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

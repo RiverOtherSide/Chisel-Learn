@@ -1,0 +1,59 @@
+SBY 23:06:20 [gcdtest] Copy '/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/gcdtest_bmc/gcdtest.sv' to '/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/gcdtest_bmc/gcdtest/src/gcdtest.sv'.
+SBY 23:06:20 [gcdtest] Copy '/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/gcdtest_bmc/ResetCounter.sv' to '/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/gcdtest_bmc/gcdtest/src/ResetCounter.sv'.
+SBY 23:06:20 [gcdtest] engine_0: smtbmc boolector
+SBY 23:06:20 [gcdtest] base: starting process "cd gcdtest/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 23:06:21 [gcdtest] base: finished (returncode=0)
+SBY 23:06:21 [gcdtest] prep: starting process "cd gcdtest/model; yosys -ql design_prep.log design_prep.ys"
+SBY 23:06:21 [gcdtest] prep: finished (returncode=0)
+SBY 23:06:21 [gcdtest] smt2: starting process "cd gcdtest/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 23:06:21 [gcdtest] smt2: finished (returncode=0)
+SBY 23:06:21 [gcdtest] engine_0: starting process "cd gcdtest; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Solver: boolector
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assumptions in step 8..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assertions in step 8..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assumptions in step 9..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assertions in step 9..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assumptions in step 10..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assertions in step 10..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assumptions in step 11..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assertions in step 11..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assumptions in step 12..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assertions in step 12..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assumptions in step 13..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assertions in step 13..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assumptions in step 14..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assertions in step 14..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assumptions in step 15..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assertions in step 15..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assumptions in step 16..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assertions in step 16..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assumptions in step 17..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assertions in step 17..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assumptions in step 18..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assertions in step 18..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assumptions in step 19..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Checking assertions in step 19..
+SBY 23:06:21 [gcdtest] engine_0: ##   0:00:00  Status: passed
+SBY 23:06:21 [gcdtest] engine_0: finished (returncode=0)
+SBY 23:06:21 [gcdtest] engine_0: Status returned by engine: pass
+SBY 23:06:21 [gcdtest] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:06:21 [gcdtest] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:06:21 [gcdtest] summary: engine_0 (smtbmc boolector) returned pass
+SBY 23:06:21 [gcdtest] summary: engine_0 did not produce any traces
+SBY 23:06:21 [gcdtest] DONE (PASS, rc=0)

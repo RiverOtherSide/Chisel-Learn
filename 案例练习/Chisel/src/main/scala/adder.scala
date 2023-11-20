@@ -10,7 +10,7 @@ class adder extends Module {
   })
 
   val reg = RegInit(0.U(8.W))
-  reg := io.a + io.b
+  reg := io.a % io.b
 
   io.c := reg
 }

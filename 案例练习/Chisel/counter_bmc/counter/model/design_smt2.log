@@ -1,0 +1,124 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.35+24 (git sha1 7eea04779, aarch64-apple-darwin20.2-clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \counter
+Used module:     \ResetCounter
+
+2.2. Analyzing design hierarchy..
+Top module:  \counter
+Used module:     \ResetCounter
+Removed 0 unused modules.
+Module counter directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== counter ===
+
+   Number of wires:                 74
+   Number of wire bits:            140
+   Number of public wires:          25
+   Number of public wire bits:      77
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 76
+     $add                            1
+     $and                           13
+     $anyinit                        8
+     $anyseq                         7
+     $assert                         7
+     $assume                         1
+     $eq                            10
+     $ff                             7
+     $logic_not                      2
+     $lt                             1
+     $mux                           16
+     $not                            2
+     ResetCounter                    1
+
+=== ResetCounter ===
+
+   Number of wires:                 11
+   Number of wire bits:            166
+   Number of public wires:           6
+   Number of public wire bits:      68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add                            1
+     $assume                         1
+     $ff                             2
+     $mux                            3
+     $not                            1
+
+=== design hierarchy ===
+
+   counter                           1
+     ResetCounter                    1
+
+   Number of wires:                 85
+   Number of wire bits:            306
+   Number of public wires:          31
+   Number of public wire bits:     145
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 83
+     $add                            2
+     $and                           13
+     $anyinit                        8
+     $anyseq                         7
+     $assert                         7
+     $assume                         2
+     $eq                            10
+     $ff                             9
+     $logic_not                      2
+     $lt                             1
+     $mux                           19
+     $not                            3
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module ResetCounter.
+Creating SMT-LIBv2 representation of module counter.
+
+End of script. Logfile hash: e3c1c4bfad, CPU: user 0.01s system 0.01s
+Yosys 0.35+24 (git sha1 7eea04779, aarch64-apple-darwin20.2-clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 65% 2x write_smt2 (0 sec), 26% 2x read_ilang (0 sec), ...

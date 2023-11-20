@@ -1,0 +1,7 @@
+# running in counter/src/
+read -sv ResetCounter.sv counter.sv
+prep -top counter -nordff
+
+hierarchy -smtcheck
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

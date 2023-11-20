@@ -1,0 +1,7 @@
+# running in gcd/src/
+read -sv gcd.sv ResetCounter.sv
+prep -top gcd -nordff
+
+hierarchy -smtcheck
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

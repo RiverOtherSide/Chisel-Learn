@@ -1,0 +1,16 @@
+[
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.SystemVerilogEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxInlineAnno",
+    "target":"gcd.ResetCounter",
+    "name":"ResetCounter.sv",
+    "text":"\nmodule ResetCounter(\n    input clk,\n    input reset,\n    output [31:0] timeSinceReset,\n    output notChaos\n);\n\nreg [31:0] count;\nreg flag;\ninitial begin\n  count = 0;\n  flag = 0;\nend\n\nassign timeSinceReset = count;\nassign notChaos = flag;\n\nalways @(posedge clk) begin\n    if (reset) begin\n        count <= 0;\n        flag <= 1;\n    end else if (flag) begin\n        count <= count + 1;\n    end\nend\n\nendmodule\n    "
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"gcd_bmc"
+  }
+]

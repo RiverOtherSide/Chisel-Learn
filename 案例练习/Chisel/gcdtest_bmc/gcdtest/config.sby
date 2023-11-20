@@ -1,0 +1,14 @@
+[options]
+mode bmc
+depth 20
+
+[engines]
+smtbmc boolector
+
+[script]
+read -sv gcdtest.sv ResetCounter.sv
+prep -top gcdtest -nordff
+
+[files]
+gcdtest.sv
+ResetCounter.sv

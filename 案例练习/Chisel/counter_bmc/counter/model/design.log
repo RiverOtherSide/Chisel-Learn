@@ -1,0 +1,410 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.35+24 (git sha1 7eea04779, aarch64-apple-darwin20.2-clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing Verilog-2005 frontend: ResetCounter.sv
+Parsing SystemVerilog input from `ResetCounter.sv' to AST representation.
+Storing AST representation for module `$abstract\ResetCounter'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: counter.sv
+Parsing SystemVerilog input from `counter.sv' to AST representation.
+Storing AST representation for module `$abstract\counter'.
+Successfully finished Verilog frontend.
+
+3. Executing PREP pass.
+
+3.1. Executing HIERARCHY pass (managing design hierarchy).
+
+3.2. Executing AST frontend in derive mode using pre-parsed AST for module `\counter'.
+Generating RTLIL representation for module `\counter'.
+
+3.2.1. Analyzing design hierarchy..
+Top module:  \counter
+
+3.2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\ResetCounter'.
+Generating RTLIL representation for module `\ResetCounter'.
+
+3.2.3. Analyzing design hierarchy..
+Top module:  \counter
+Used module:     \ResetCounter
+
+3.2.4. Analyzing design hierarchy..
+Top module:  \counter
+Used module:     \ResetCounter
+Removing unused module `$abstract\counter'.
+Removing unused module `$abstract\ResetCounter'.
+Removed 2 unused modules.
+Module counter directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3.3. Executing PROC pass (convert processes to netlists).
+
+3.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$ResetCounter.sv:19$77 in module ResetCounter.
+Marked 2 switch rules as full_case in process $proc$counter.sv:27$13 in module counter.
+Removed a total of 0 dead cases.
+
+3.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 9 assignments to connections.
+
+3.3.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\ResetCounter.$proc$ResetCounter.sv:0$79'.
+  Set init value: \count = 0
+  Set init value: \flag = 1'0
+Found init rule in `\counter.$proc$counter.sv:0$75'.
+  Set init value: $formal$counter.sv:184$7_EN = 1'0
+Found init rule in `\counter.$proc$counter.sv:0$73'.
+  Set init value: $formal$counter.sv:180$6_EN = 1'0
+Found init rule in `\counter.$proc$counter.sv:0$71'.
+  Set init value: $formal$counter.sv:176$5_EN = 1'0
+Found init rule in `\counter.$proc$counter.sv:0$69'.
+  Set init value: $formal$counter.sv:172$4_EN = 1'0
+Found init rule in `\counter.$proc$counter.sv:0$67'.
+  Set init value: $formal$counter.sv:168$3_EN = 1'0
+Found init rule in `\counter.$proc$counter.sv:0$65'.
+  Set init value: $formal$counter.sv:164$2_EN = 1'0
+Found init rule in `\counter.$proc$counter.sv:0$63'.
+  Set init value: $formal$counter.sv:160$1_EN = 1'0
+
+3.3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~11 debug messages>
+
+3.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\ResetCounter.$proc$ResetCounter.sv:0$79'.
+Creating decoders for process `\ResetCounter.$proc$ResetCounter.sv:19$77'.
+     1/2: $0\flag[0:0]
+     2/2: $0\count[31:0]
+Creating decoders for process `\counter.$proc$counter.sv:0$75'.
+Creating decoders for process `\counter.$proc$counter.sv:0$73'.
+Creating decoders for process `\counter.$proc$counter.sv:0$71'.
+Creating decoders for process `\counter.$proc$counter.sv:0$69'.
+Creating decoders for process `\counter.$proc$counter.sv:0$67'.
+Creating decoders for process `\counter.$proc$counter.sv:0$65'.
+Creating decoders for process `\counter.$proc$counter.sv:0$63'.
+Creating decoders for process `\counter.$proc$counter.sv:158$15'.
+     1/14: $0$formal$counter.sv:160$1_EN[0:0]$17
+     2/14: $0$formal$counter.sv:160$1_CHECK[0:0]$16
+     3/14: $0$formal$counter.sv:164$2_EN[0:0]$19
+     4/14: $0$formal$counter.sv:164$2_CHECK[0:0]$18
+     5/14: $0$formal$counter.sv:168$3_EN[0:0]$21
+     6/14: $0$formal$counter.sv:168$3_CHECK[0:0]$20
+     7/14: $0$formal$counter.sv:172$4_EN[0:0]$23
+     8/14: $0$formal$counter.sv:172$4_CHECK[0:0]$22
+     9/14: $0$formal$counter.sv:176$5_EN[0:0]$25
+    10/14: $0$formal$counter.sv:176$5_CHECK[0:0]$24
+    11/14: $0$formal$counter.sv:180$6_EN[0:0]$27
+    12/14: $0$formal$counter.sv:180$6_CHECK[0:0]$26
+    13/14: $0$formal$counter.sv:184$7_EN[0:0]$29
+    14/14: $0$formal$counter.sv:184$7_CHECK[0:0]$28
+Creating decoders for process `\counter.$proc$counter.sv:27$13'.
+     1/1: $0\count[7:0]
+
+3.3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\ResetCounter.\count' using process `\ResetCounter.$proc$ResetCounter.sv:19$77'.
+  created $dff cell `$procdff$122' with positive edge clock.
+Creating register for signal `\ResetCounter.\flag' using process `\ResetCounter.$proc$ResetCounter.sv:19$77'.
+  created $dff cell `$procdff$123' with positive edge clock.
+Creating register for signal `\counter.$formal$counter.sv:160$1_CHECK' using process `\counter.$proc$counter.sv:158$15'.
+  created $dff cell `$procdff$124' with positive edge clock.
+Creating register for signal `\counter.$formal$counter.sv:160$1_EN' using process `\counter.$proc$counter.sv:158$15'.
+  created $dff cell `$procdff$125' with positive edge clock.
+Creating register for signal `\counter.$formal$counter.sv:164$2_CHECK' using process `\counter.$proc$counter.sv:158$15'.
+  created $dff cell `$procdff$126' with positive edge clock.
+Creating register for signal `\counter.$formal$counter.sv:164$2_EN' using process `\counter.$proc$counter.sv:158$15'.
+  created $dff cell `$procdff$127' with positive edge clock.
+Creating register for signal `\counter.$formal$counter.sv:168$3_CHECK' using process `\counter.$proc$counter.sv:158$15'.
+  created $dff cell `$procdff$128' with positive edge clock.
+Creating register for signal `\counter.$formal$counter.sv:168$3_EN' using process `\counter.$proc$counter.sv:158$15'.
+  created $dff cell `$procdff$129' with positive edge clock.
+Creating register for signal `\counter.$formal$counter.sv:172$4_CHECK' using process `\counter.$proc$counter.sv:158$15'.
+  created $dff cell `$procdff$130' with positive edge clock.
+Creating register for signal `\counter.$formal$counter.sv:172$4_EN' using process `\counter.$proc$counter.sv:158$15'.
+  created $dff cell `$procdff$131' with positive edge clock.
+Creating register for signal `\counter.$formal$counter.sv:176$5_CHECK' using process `\counter.$proc$counter.sv:158$15'.
+  created $dff cell `$procdff$132' with positive edge clock.
+Creating register for signal `\counter.$formal$counter.sv:176$5_EN' using process `\counter.$proc$counter.sv:158$15'.
+  created $dff cell `$procdff$133' with positive edge clock.
+Creating register for signal `\counter.$formal$counter.sv:180$6_CHECK' using process `\counter.$proc$counter.sv:158$15'.
+  created $dff cell `$procdff$134' with positive edge clock.
+Creating register for signal `\counter.$formal$counter.sv:180$6_EN' using process `\counter.$proc$counter.sv:158$15'.
+  created $dff cell `$procdff$135' with positive edge clock.
+Creating register for signal `\counter.$formal$counter.sv:184$7_CHECK' using process `\counter.$proc$counter.sv:158$15'.
+  created $dff cell `$procdff$136' with positive edge clock.
+Creating register for signal `\counter.$formal$counter.sv:184$7_EN' using process `\counter.$proc$counter.sv:158$15'.
+  created $dff cell `$procdff$137' with positive edge clock.
+Creating register for signal `\counter.\count' using process `\counter.$proc$counter.sv:27$13'.
+  created $dff cell `$procdff$138' with positive edge clock.
+
+3.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `ResetCounter.$proc$ResetCounter.sv:0$79'.
+Found and cleaned up 2 empty switches in `\ResetCounter.$proc$ResetCounter.sv:19$77'.
+Removing empty process `ResetCounter.$proc$ResetCounter.sv:19$77'.
+Removing empty process `counter.$proc$counter.sv:0$75'.
+Removing empty process `counter.$proc$counter.sv:0$73'.
+Removing empty process `counter.$proc$counter.sv:0$71'.
+Removing empty process `counter.$proc$counter.sv:0$69'.
+Removing empty process `counter.$proc$counter.sv:0$67'.
+Removing empty process `counter.$proc$counter.sv:0$65'.
+Removing empty process `counter.$proc$counter.sv:0$63'.
+Found and cleaned up 7 empty switches in `\counter.$proc$counter.sv:158$15'.
+Removing empty process `counter.$proc$counter.sv:158$15'.
+Found and cleaned up 2 empty switches in `\counter.$proc$counter.sv:27$13'.
+Removing empty process `counter.$proc$counter.sv:27$13'.
+Cleaned up 11 empty switches.
+
+3.3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ResetCounter.
+Optimizing module counter.
+<suppressed ~4 debug messages>
+
+3.4. Executing FUTURE pass.
+
+3.5. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ResetCounter.
+Optimizing module counter.
+
+3.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ResetCounter..
+Finding unused cells or wires in module \counter..
+Removed 2 unused cells and 51 unused wires.
+<suppressed ~5 debug messages>
+
+3.7. Executing CHECK pass (checking for obvious problems).
+Checking module ResetCounter...
+Checking module counter...
+Found and reported 0 problems.
+
+3.8. Executing OPT pass (performing simple optimizations).
+
+3.8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ResetCounter.
+Optimizing module counter.
+
+3.8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ResetCounter'.
+Finding identical cells in module `\counter'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+3.8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \ResetCounter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \counter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~17 debug messages>
+
+3.8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \ResetCounter.
+  Optimizing cells in module \counter.
+Performed a total of 0 changes.
+
+3.8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ResetCounter'.
+Finding identical cells in module `\counter'.
+Removed a total of 0 cells.
+
+3.8.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ResetCounter..
+Finding unused cells or wires in module \counter..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+3.8.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ResetCounter.
+Optimizing module counter.
+
+3.8.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.8.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \ResetCounter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \counter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~17 debug messages>
+
+3.8.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \ResetCounter.
+  Optimizing cells in module \counter.
+Performed a total of 0 changes.
+
+3.8.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ResetCounter'.
+Finding identical cells in module `\counter'.
+Removed a total of 0 cells.
+
+3.8.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ResetCounter..
+Finding unused cells or wires in module \counter..
+
+3.8.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ResetCounter.
+Optimizing module counter.
+
+3.8.14. Finished OPT passes. (There is nothing left to do.)
+
+3.9. Executing WREDUCE pass (reducing word size of cells).
+Removed top 31 bits (of 32) from port B of cell ResetCounter.$add$ResetCounter.sv:24$78 ($add).
+Removed top 7 bits (of 8) from port B of cell counter.$add$counter.sv:14$8 ($add).
+Removed top 4 bits (of 8) from port B of cell counter.$eq$counter.sv:30$14 ($eq).
+Removed top 4 bits (of 8) from port B of cell counter.$lt$counter.sv:161$32 ($lt).
+Removed top 31 bits (of 32) from port B of cell counter.$eq$counter.sv:168$37 ($eq).
+Removed top 7 bits (of 8) from port B of cell counter.$eq$counter.sv:169$40 ($eq).
+Removed top 30 bits (of 32) from port B of cell counter.$eq$counter.sv:172$41 ($eq).
+Removed top 6 bits (of 8) from port B of cell counter.$eq$counter.sv:173$44 ($eq).
+Removed top 30 bits (of 32) from port B of cell counter.$eq$counter.sv:176$45 ($eq).
+Removed top 6 bits (of 8) from port B of cell counter.$eq$counter.sv:177$48 ($eq).
+Removed top 29 bits (of 32) from port B of cell counter.$eq$counter.sv:180$49 ($eq).
+Removed top 5 bits (of 8) from port B of cell counter.$eq$counter.sv:181$52 ($eq).
+Removed top 28 bits (of 32) from port B of cell counter.$eq$counter.sv:184$53 ($eq).
+
+3.10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ResetCounter..
+Finding unused cells or wires in module \counter..
+
+3.11. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+3.12. Executing OPT pass (performing simple optimizations).
+
+3.12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ResetCounter.
+Optimizing module counter.
+
+3.12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ResetCounter'.
+Finding identical cells in module `\counter'.
+Removed a total of 0 cells.
+
+3.12.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ResetCounter..
+Finding unused cells or wires in module \counter..
+
+3.12.4. Finished fast OPT passes.
+
+3.13. Printing statistics.
+
+=== ResetCounter ===
+
+   Number of wires:                 10
+   Number of wire bits:            165
+   Number of public wires:           6
+   Number of public wire bits:      68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $add                            1
+     $dff                            2
+     $mux                            3
+
+=== counter ===
+
+   Number of wires:                 66
+   Number of wire bits:            132
+   Number of public wires:          11
+   Number of public wire bits:      63
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 67
+     $add                            1
+     $and                           13
+     $assert                         7
+     $dff                           15
+     $eq                            10
+     $logic_not                      2
+     $lt                             1
+     $mux                           16
+     $not                            1
+     ResetCounter                    1
+
+=== design hierarchy ===
+
+   counter                           1
+     ResetCounter                    1
+
+   Number of wires:                 76
+   Number of wire bits:            297
+   Number of public wires:          17
+   Number of public wire bits:     131
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 72
+     $add                            2
+     $and                           13
+     $assert                         7
+     $dff                           17
+     $eq                            10
+     $logic_not                      2
+     $lt                             1
+     $mux                           19
+     $not                            1
+
+3.14. Executing CHECK pass (checking for obvious problems).
+Checking module ResetCounter...
+Checking module counter...
+Found and reported 0 problems.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1. Analyzing design hierarchy..
+Top module:  \counter
+Used module:     \ResetCounter
+
+4.2. Analyzing design hierarchy..
+Top module:  \counter
+Used module:     \ResetCounter
+Removed 0 unused modules.
+Module counter directly or indirectly contains formal properties -> setting "keep" attribute.
+
+5. Executing jny backend.
+
+6. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+End of script. Logfile hash: 1ad46db079, CPU: user 0.03s system 0.02s
+Yosys 0.35+24 (git sha1 7eea04779, aarch64-apple-darwin20.2-clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 21% 6x opt_expr (0 sec), 19% 5x opt_clean (0 sec), ...

@@ -1,13 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/src/main/scala/philo.scala:41:36: not found: value ph1_init[0m
-[0m[[0m[31merror[0m] [0m[0m  val ph1 = Module(new philosopher(ph1_init))[0m
-[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/src/main/scala/philo.scala:42:36: not found: value ph2_init[0m
-[0m[[0m[31merror[0m] [0m[0m  val ph2 = Module(new philosopher(ph2_init))[0m
-[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/src/main/scala/philo.scala:43:36: not found: value ph3_init[0m
-[0m[[0m[31merror[0m] [0m[0m  val ph3 = Module(new philosopher(ph3_init))[0m
-[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/src/main/scala/philo.scala:44:36: not found: value ph4_init[0m
-[0m[[0m[31merror[0m] [0m[0m  val ph4 = Module(new philosopher(ph4_init))[0m
-[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
-[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/src/main/scala/gcd.scala:81:8: Generated class gcdCheck differs only in case from gcdcheck.[0m
+[0m[[0m[33mwarn[0m] [0m[0m  Such classes will overwrite one another on case-insensitive filesystems.[0m
+[0m[[0m[33mwarn[0m] [0m[0mobject gcdCheck extends App{[0m
+[0m[[0m[33mwarn[0m] [0m[0m       ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

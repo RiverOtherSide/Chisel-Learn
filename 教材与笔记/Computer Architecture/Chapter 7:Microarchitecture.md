@@ -44,11 +44,29 @@ The *pipelined microarchitecture* （流水线式微架构） 通过管道到单
 
 ##### 7.3.1 Sample Program
 
+![image-20231112211424276](./assets/image-20231112211424276.png)
+
 
 
 ##### 7.3.2 Single-Cycle Datapath
 
+###### lw
+
+
+
 [补码/反码、零扩展和符号位扩展（Zero extension and Sign extension）](https://blog.csdn.net/weixin_40539125/article/details/103058420)
+
+
+
+###### sw
+
+
+
+
+
+###### R-Type Instruxtions
+
+
 
 ##### 7.3.3 Single-Cycle Control
 

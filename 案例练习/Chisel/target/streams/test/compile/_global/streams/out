@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/src/test/scala/philoTest.scala:38:16: value go is not a member of chisel3.Bundle{val left: chisel3.UInt; val right: chisel3.UInt; val out: chisel3.UInt}[0m
-[0m[[0m[31merror[0m] [0m[0m        dut.io.go.poke(true.B)[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/src/test/scala/gcdTest.scala:12:16: value b is not a member of chisel3.Bundle{val a: chisel3.UInt; val o: chisel3.UInt; val done: chisel3.Bool}[0m
+[0m[[0m[31merror[0m] [0m[0m        gcd.io.b.poke(12.U)[0m
 [0m[[0m[31merror[0m] [0m[0m               ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

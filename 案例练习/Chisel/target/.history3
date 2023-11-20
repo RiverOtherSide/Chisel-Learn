@@ -7,3 +7,50 @@
 1698854436661:testOnly philosopherTest
 1698939547008:testOnly philoTest
 1699273223289:;set _root_.scala.collection.Seq(historyPath := None,shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/private/var/folders/pb/7b8skv652n158nrv8l250d500000gn/T/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/Users/tangzhijiang/Library/Application Support/JetBrains/IntelliJIdea2023.2/plugins/Scala/repo/org/jetbrains/scala/sbt-structure-extractor_2.12_1.0/2023.1.0/sbt-structure-extractor-2023.1.0.jar" org.jetbrains.sbt.CreateTasks;preferScala2;*/*:dumpStructure
+1699880175878:testOnly exerciseTest
+1699955367747:[A
+1699955369331:testOnly exerciseTest
+1700056880807:testOnly gcdTest
+1700065634683:runMain gcdCheck
+1700116011140:testOnly gcdTest
+1700116027212:runMain gcdCheck
+1700118529719:runMain counterCheck
+1700119025934:testOnly gcdTest
+1700119685228:[A
+1700119687941:testOnly gcdTest
+1700119712736:testOnly adderTest
+1700119774220:testOnly gcdTest
+1700120879694:testOnly adderTest
+1700120906548:testOnly gcdTest
+1700121030579:testOnly gcdTest -- -DwriteVcd=1
+1700121496799:testOnly gcdTest
+1700122275897:testOnly gcdTest -- -DwriteVcd=1
+1700122518105:testOnly gcdTest
+1700122563059:testOnly gcdTest -- -DwriteVcd=1
+1700122701928:runMain gcdCheck
+1700125935169:[A
+1700125938710:runMain gcdCheck
+1700126041300:testOnly adderTest
+1700126142373:runMain gcdCheck
+1700126226779:testOnly adderTest
+1700126249890:runMain gcdCheck
+1700126762072:testOnly adderTest
+1700126798631:runMain gcdCheck
+1700126819038:runMain counterCheck
+1700137461409:runMain gcdCheck
+1700137551041:testOnly adderTest
+1700141133394:testOnly gcdTest
+1700141228565:testOnly gcdTest -- -Dwritevcd=1
+1700141348793:testOnly gcdTest
+1700141417547:testOnly gcdTest -- -DwriteVcd=1
+1700142203489:runMain gcdCheck
+1700142264854:testOnly gcdTest -- -DwriteVcd=1
+1700142300302:runMain gcdCheck
+1700142480742:testOnly adderTest
+1700142624835:runMain gcdCheck
+1700143138818:testOnly gcdTest -- -DwriteVcd=1
+1700143259077:runMain gcdCheck
+1700143291118:testOnly gcdTest -- -DwriteVcd=1
+1700144195021:runMain gcdCheck
+1700146957303:testOnly gcdTest -- -DwriteVcd=1
+1700147117939:runMain gcdCheck

@@ -1,0 +1,29 @@
+initial
+assume (= [$formal$gcd.sv:165$1_EN] false)
+assume (= [$formal$gcd.sv:169$2_EN] false)
+assume (= [_witness_.anyinit_procdff_122] false)
+assume (= [_witness_.anyinit_procdff_124] false)
+assume (= [lsb] #b011)
+assume (= [resetCounter.count] #b00000000000000000000000000000000)
+assume (= [resetCounter.flag] false)
+assume (= [start] false)
+assume (= [x] #b01001100)
+assume (= [y] #b00011001)
+
+state 0
+assume (= [clock] false)
+assume (= [io_a] #b11111110)
+assume (= [io_b] #b00011001)
+assume (= [reset] true)
+
+state 1
+assume (= [clock] false)
+assume (= [io_a] #b00000110)
+assume (= [io_b] #b00000100)
+assume (= [reset] false)
+
+state 2
+assume (= [clock] false)
+assume (= [io_a] #b00000000)
+assume (= [io_b] #b00000000)
+assume (= [reset] false)
