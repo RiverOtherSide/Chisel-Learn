@@ -1,0 +1,141 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.35+24 (git sha1 7eea04779, aarch64-apple-darwin20.2-clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \memory
+Used module:     \ResetCounter
+Used module:     $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000010
+
+2.2. Analyzing design hierarchy..
+Top module:  \memory
+Used module:     \ResetCounter
+Used module:     $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000010
+Removed 0 unused modules.
+Module memory directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== memory ===
+
+   Number of wires:                 67
+   Number of wire bits:           6731
+   Number of public wires:          28
+   Number of public wire bits:    2612
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 58
+     $and                            6
+     $anyinit                        6
+     $anyseq                         2
+     $assert                         1
+     $assume                         2
+     $eq                             9
+     $ff                             1
+     $logic_not                      1
+     $lt                             2
+     $mux                           23
+     $not                            3
+     $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000010      1
+     ResetCounter                    1
+
+=== ResetCounter ===
+
+   Number of wires:                 11
+   Number of wire bits:            166
+   Number of public wires:           6
+   Number of public wire bits:      68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add                            1
+     $assume                         1
+     $ff                             2
+     $mux                            3
+     $not                            1
+
+=== $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000010 ===
+
+   Number of wires:                  2
+   Number of wire bits:              4
+   Number of public wires:           2
+   Number of public wire bits:       4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $anyconst                       1
+
+=== design hierarchy ===
+
+   memory                            1
+     $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000010      1
+     ResetCounter                    1
+
+   Number of wires:                 80
+   Number of wire bits:           6901
+   Number of public wires:          36
+   Number of public wire bits:    2684
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 65
+     $add                            1
+     $and                            6
+     $anyconst                       1
+     $anyinit                        6
+     $anyseq                         2
+     $assert                         1
+     $assume                         3
+     $eq                             9
+     $ff                             3
+     $logic_not                      1
+     $lt                             2
+     $mux                           26
+     $not                            4
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000010.
+Creating SMT-LIBv2 representation of module ResetCounter.
+Creating SMT-LIBv2 representation of module memory.
+
+End of script. Logfile hash: af989ccd07, CPU: user 0.02s system 0.02s
+Yosys 0.35+24 (git sha1 7eea04779, aarch64-apple-darwin20.2-clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 91% 2x write_smt2 (0 sec), 6% 2x read_ilang (0 sec), ...

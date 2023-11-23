@@ -1,0 +1,15 @@
+[options]
+mode bmc
+depth 20
+
+[engines]
+smtbmc boolector
+
+[script]
+read -sv memory.sv AnyConst.sv ResetCounter.sv
+prep -top memory -nordff
+
+[files]
+memory.sv
+AnyConst.sv
+ResetCounter.sv

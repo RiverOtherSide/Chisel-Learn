@@ -2,6 +2,8 @@
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	gcdtest.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/gcdtest.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	buffer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/buffer.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	chiselFv[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/chiselFv[0m
 [0m[[0m[0mdebug[0m] [0m[0m	chiselFv/Check$$anon$4.class[0m
@@ -38,28 +40,42 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/chiselFv/InitialReg$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	chiselFv/AnyConst$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/chiselFv/AnyConst$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	memoryMain.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/memoryMain.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	elevator$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/elevator$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	gcdCheck2$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/gcdCheck2$delayedInit$body.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	gcd.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/gcd.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	adder.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/adder.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	gcdMain$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/gcdMain$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	memoryMain$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/memoryMain$delayedInit$body.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	adder$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/adder$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	gcdCheck1$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/gcdCheck1$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	counterCheck$delayedInit$body.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/counterCheck$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	gcdCheck1$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/gcdCheck1$delayedInit$body.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	philoMain.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/philoMain.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	memoryCheck.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/memoryCheck.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	philo$$anon$2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/philo$$anon$2.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	gcdCheck$delayedInit$body.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/gcdCheck$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	memoryCheck$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/memoryCheck$delayedInit$body.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	adderMain$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/adderMain$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	gcdCheck$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/gcdCheck$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	memoryCheck$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/memoryCheck$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	memory$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/memory$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	philosopher$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/philosopher$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	elevatorMain.class[0m
@@ -68,14 +84,18 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/adderMain$delayedInit$body.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	philoMain$delayedInit$body.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/philoMain$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	gcdCheck1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/gcdCheck1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	exercise.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/exercise.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	counterCheck.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/counterCheck.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	exercise$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/exercise$$anon$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	gcdCheck.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/gcdCheck.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	gcdCheck2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/gcdCheck2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	memory.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/memory.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	counter$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/counter$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	main_control.class[0m
@@ -86,12 +106,20 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/counter.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	main_control$$anon$2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/main_control$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	memory$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/memory$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	buffer$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/buffer$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	elevatorMain$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/elevatorMain$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	gcd$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/gcd$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	gcdCheck2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/gcdCheck2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	elevatorMain$delayedInit$body.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/elevatorMain$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	memoryMain$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/memoryMain$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	philo.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/philo.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	adderMain.class[0m
@@ -100,6 +128,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/philoMain$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	counterCheck$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/counterCheck$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	buffer$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/buffer$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	philosopher.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/philosopher.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	elevator.class[0m

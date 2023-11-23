@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2023-11-22T23:50:22" hostname="MacBook-Pro.local" package="memory" id="0" name="default" tests="1" errors="0" failures="0" time="63" skipped="0">
+<properties>
+<property name="os" value="Darwin"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="default" name="build execution" time="0">
+</testcase>
+<testcase classname="default" name="Property ASSERT in memory at memory.sv:185.52-186.41" time="0" type="ASSERT" location="memory.sv:185.52-186.41" id="$assert$memory.sv:185$39">
+</testcase>
+<system-out>SBY 23:49:17 [memory] Copy '/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/memory_bmc/memory.sv' to '/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/memory_bmc/memory/src/memory.sv'.
+SBY 23:49:17 [memory] Copy '/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/memory_bmc/AnyConst.sv' to '/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/memory_bmc/memory/src/AnyConst.sv'.
+SBY 23:49:17 [memory] Copy '/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/memory_bmc/ResetCounter.sv' to '/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/memory_bmc/memory/src/ResetCounter.sv'.
+SBY 23:49:17 [memory] engine_0: smtbmc boolector
+SBY 23:49:17 [memory] base: starting process &quot;cd memory/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 23:49:17 [memory] base: finished (returncode=0)
+SBY 23:49:17 [memory] prep: starting process &quot;cd memory/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 23:49:17 [memory] prep: finished (returncode=0)
+SBY 23:49:17 [memory] smt2: starting process &quot;cd memory/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 23:49:18 [memory] smt2: finished (returncode=0)
+SBY 23:49:18 [memory] engine_0: starting process &quot;cd memory; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 23:49:18 [memory] engine_0: ##   0:00:00  Solver: boolector
+SBY 23:49:18 [memory] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 23:49:18 [memory] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 23:49:18 [memory] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 23:49:18 [memory] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 23:49:18 [memory] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 23:49:18 [memory] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 23:49:18 [memory] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 23:49:18 [memory] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 23:49:18 [memory] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 23:49:18 [memory] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 23:49:18 [memory] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 23:49:18 [memory] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 23:49:19 [memory] engine_0: ##   0:00:01  Checking assumptions in step 6..
+SBY 23:49:19 [memory] engine_0: ##   0:00:01  Checking assertions in step 6..
+SBY 23:49:20 [memory] engine_0: ##   0:00:01  Checking assumptions in step 7..
+SBY 23:49:20 [memory] engine_0: ##   0:00:01  Checking assertions in step 7..
+SBY 23:49:21 [memory] engine_0: ##   0:00:03  Checking assumptions in step 8..
+SBY 23:49:21 [memory] engine_0: ##   0:00:03  Checking assertions in step 8..
+SBY 23:49:23 [memory] engine_0: ##   0:00:04  Checking assumptions in step 9..
+SBY 23:49:23 [memory] engine_0: ##   0:00:04  Checking assertions in step 9..
+SBY 23:49:24 [memory] engine_0: ##   0:00:05  Checking assumptions in step 10..
+SBY 23:49:24 [memory] engine_0: ##   0:00:05  Checking assertions in step 10..
+SBY 23:49:26 [memory] engine_0: ##   0:00:08  Checking assumptions in step 11..
+SBY 23:49:26 [memory] engine_0: ##   0:00:08  Checking assertions in step 11..
+SBY 23:49:29 [memory] engine_0: ##   0:00:11  Checking assumptions in step 12..
+SBY 23:49:29 [memory] engine_0: ##   0:00:11  Checking assertions in step 12..
+SBY 23:49:31 [memory] engine_0: ##   0:00:13  Checking assumptions in step 13..
+SBY 23:49:31 [memory] engine_0: ##   0:00:13  Checking assertions in step 13..
+SBY 23:49:36 [memory] engine_0: ##   0:00:18  Checking assumptions in step 14..
+SBY 23:49:36 [memory] engine_0: ##   0:00:18  Checking assertions in step 14..
+SBY 23:49:42 [memory] engine_0: ##   0:00:24  Checking assumptions in step 15..
+SBY 23:49:42 [memory] engine_0: ##   0:00:24  Checking assertions in step 15..
+SBY 23:49:45 [memory] engine_0: ##   0:00:26  Checking assumptions in step 16..
+SBY 23:49:45 [memory] engine_0: ##   0:00:26  Checking assertions in step 16..
+SBY 23:49:53 [memory] engine_0: ##   0:00:35  Checking assumptions in step 17..
+SBY 23:49:53 [memory] engine_0: ##   0:00:35  Checking assertions in step 17..
+SBY 23:50:01 [memory] engine_0: ##   0:00:42  Checking assumptions in step 18..
+SBY 23:50:01 [memory] engine_0: ##   0:00:42  Checking assertions in step 18..
+SBY 23:50:12 [memory] engine_0: ##   0:00:53  Checking assumptions in step 19..
+SBY 23:50:12 [memory] engine_0: ##   0:00:53  Checking assertions in step 19..
+SBY 23:50:22 [memory] engine_0: ##   0:01:04  Status: passed
+SBY 23:50:22 [memory] engine_0: finished (returncode=0)
+SBY 23:50:22 [memory] engine_0: Status returned by engine: pass
+SBY 23:50:22 [memory] summary: Elapsed clock time [H:MM:SS (secs)]: 0:01:04 (64)
+SBY 23:50:22 [memory] summary: Elapsed process time [H:MM:SS (secs)]: 0:01:03 (63)
+SBY 23:50:22 [memory] summary: engine_0 (smtbmc boolector) returned pass
+SBY 23:50:22 [memory] summary: engine_0 did not produce any traces
+SBY 23:50:22 [memory] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

@@ -54,3 +54,9 @@
 1700144195021:runMain gcdCheck
 1700146957303:testOnly gcdTest -- -DwriteVcd=1
 1700147117939:runMain gcdCheck
+1700640271378:testOnly memoryTest
+1700640622960:testOnly memoryTest -- -DwriteVcd=1
+1700645596638:runMain memoryCheck
+1700667899803:testOnly bufferTest
+1700668155381:runMain memoryCheck
+1700668315628:testOnly bufferTest -- -DwriteVcd=1

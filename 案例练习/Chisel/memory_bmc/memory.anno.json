@@ -1,0 +1,41 @@
+[
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~memory|AnyConst",
+    "duplicate":"~memory|memory/random_addr_cst:AnyConst",
+    "index":0.3333333333333333
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~memory|AnyConst_1",
+    "duplicate":"~memory|memory/random_addr_fail_cst:AnyConst",
+    "index":0.6666666666666666
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.SystemVerilogEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxInlineAnno",
+    "target":"memory.AnyConst",
+    "name":"AnyConst.sv",
+    "text":"\nmodule AnyConst #(parameter WIDTH) (\n    output [WIDTH-1:0] out\n);\n\n(* anyconst *) reg [WIDTH-1:0] cst;\nassign out = cst;\n\nendmodule\n"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxInlineAnno",
+    "target":"memory.ResetCounter",
+    "name":"ResetCounter.sv",
+    "text":"\nmodule ResetCounter(\n    input clk,\n    input reset,\n    output [31:0] timeSinceReset,\n    output notChaos\n);\n\nreg [31:0] count;\nreg flag;\ninitial begin\n  count = 0;\n  flag = 0;\nend\n\nassign timeSinceReset = count;\nassign notChaos = flag;\n\nalways @(posedge clk) begin\n    if (reset) begin\n        count <= 0;\n        flag <= 1;\n    end else if (flag) begin\n        count <= count + 1;\n    end\nend\n\nendmodule\n    "
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"memory_bmc"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~memory|memory>io_out_data",
+    "sources":[
+      "~memory|memory>io_in_rd_addr"
+    ]
+  }
+]

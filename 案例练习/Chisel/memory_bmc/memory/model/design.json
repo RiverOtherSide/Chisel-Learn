@@ -1,0 +1,1012 @@
+{
+  "$schema": "https://raw.githubusercontent.com/YosysHQ/yosys/master/misc/jny.schema.json",
+  "generator": "Yosys 0.35+24 (git sha1 7eea04779, aarch64-apple-darwin20.2-clang 10.0.0-4ubuntu1 -fPIC -Os)",
+  "version": "0.0.1",
+  "invocation": "write_jny -no-connections ../model/design.json ",
+  "features": ["attributes", "properties"],
+  "modules": [
+      {
+        "name": "$paramod\\AnyConst\\WIDTH=s32'00000000000000000000000000000010",
+        "cell_sorts": [
+          {
+            "type": "$anyconst",
+            "ports": [
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [2, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$anyconst$44",
+                  "attributes": {
+                    "reg": "cst",
+                    "src": "AnyConst.sv:0.0-0.0"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "dynports": "00000000000000000000000000000001",
+            "hdlname": "\\AnyConst",
+            "src": "AnyConst.sv:2.1-9.10"
+        }
+      },
+      {
+        "name": "ResetCounter",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procmux$49",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ResetCounter.sv:20.9-20.14|ResetCounter.sv:20.5-25.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$51",
+                  "attributes": {
+                    "src": "ResetCounter.sv:23.18-23.22|ResetCounter.sv:23.14-25.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$54",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ResetCounter.sv:20.9-20.14|ResetCounter.sv:20.5-25.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$dff",
+            "ports": [
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procdff$112",
+                  "attributes": {
+                    "src": "ResetCounter.sv:19.1-26.4"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$113",
+                  "attributes": {
+                    "src": "ResetCounter.sv:19.1-26.4"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$add",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$add$ResetCounter.sv:24$46",
+                  "attributes": {
+                    "src": "ResetCounter.sv:24.18-24.27"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000100000"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "hdlname": "\\ResetCounter",
+            "src": "ResetCounter.sv:2.1-28.10"
+        }
+      },
+      {
+        "name": "memory",
+        "cell_sorts": [
+          {
+            "type": "$paramod\\AnyConst\\WIDTH=s32'00000000000000000000000000000010",
+            "ports": [
+                {
+                  "name": "out",
+                  "direction": "",
+                  "range": [2, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "random_addr_cst",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "memory.sv:42.25-44.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "ResetCounter",
+            "ports": [
+                {
+                  "name": "clk",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "notChaos",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "reset",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "timeSinceReset",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "resetCounter",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "memory.sv:36.16-41.4"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$dff",
+            "ports": [
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procdff$114",
+                  "attributes": {
+                    "src": "memory.sv:179.3-188.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$115",
+                  "attributes": {
+                    "src": "memory.sv:179.3-188.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$116",
+                  "attributes": {
+                    "src": "memory.sv:179.3-188.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$117",
+                  "attributes": {
+                    "src": "memory.sv:179.3-188.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$118",
+                  "attributes": {
+                    "src": "memory.sv:51.3-125.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                },
+                {
+                  "name": "$procdff$119",
+                  "attributes": {
+                    "src": "memory.sv:51.3-125.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                },
+                {
+                  "name": "$procdff$120",
+                  "attributes": {
+                    "src": "memory.sv:51.3-125.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                },
+                {
+                  "name": "$procdff$121",
+                  "attributes": {
+                    "src": "memory.sv:51.3-125.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                },
+                {
+                  "name": "$procdff$122",
+                  "attributes": {
+                    "src": "memory.sv:51.3-125.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$not$memory.sv:182$34",
+                  "attributes": {
+                    "src": "memory.sv:182.14-182.36"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$not$memory.sv:33$7",
+                  "attributes": {
+                    "src": "memory.sv:33.16-33.22"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [256, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [256, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [256, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procmux$100",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "memory.sv:63.9-63.14|memory.sv:63.5-73.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                },
+                {
+                  "name": "$procmux$103",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "memory.sv:56.13-56.33|memory.sv:56.9-60.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                },
+                {
+                  "name": "$procmux$105",
+                  "attributes": {
+                    "src": "memory.sv:55.11-55.32|memory.sv:55.7-61.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                },
+                {
+                  "name": "$procmux$107",
+                  "attributes": {
+                    "src": "memory.sv:54.18-54.26|memory.sv:54.14-62.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                },
+                {
+                  "name": "$procmux$110",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "memory.sv:52.9-52.14|memory.sv:52.5-62.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                },
+                {
+                  "name": "$procmux$56",
+                  "attributes": {
+                    "src": "memory.sv:181.9-181.15|memory.sv:181.5-183.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$58",
+                  "attributes": {
+                    "src": "memory.sv:181.9-181.15|memory.sv:181.5-183.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$60",
+                  "attributes": {
+                    "src": "memory.sv:185.9-185.45|memory.sv:185.5-187.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$62",
+                  "attributes": {
+                    "src": "memory.sv:185.9-185.45|memory.sv:185.5-187.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$64",
+                  "attributes": {
+                    "src": "memory.sv:100.18-100.22|memory.sv:100.14-102.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                },
+                {
+                  "name": "$procmux$67",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "memory.sv:98.18-98.94|memory.sv:98.14-102.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                },
+                {
+                  "name": "$procmux$70",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "memory.sv:96.9-96.14|memory.sv:96.5-102.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                },
+                {
+                  "name": "$procmux$75",
+                  "attributes": {
+                    "src": "memory.sv:88.11-88.32|memory.sv:88.7-94.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                },
+                {
+                  "name": "$procmux$77",
+                  "attributes": {
+                    "src": "memory.sv:87.18-87.26|memory.sv:87.14-95.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                },
+                {
+                  "name": "$procmux$80",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "memory.sv:85.9-85.14|memory.sv:85.5-95.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                },
+                {
+                  "name": "$procmux$85",
+                  "attributes": {
+                    "src": "memory.sv:77.11-77.32|memory.sv:77.7-83.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                },
+                {
+                  "name": "$procmux$87",
+                  "attributes": {
+                    "src": "memory.sv:76.18-76.26|memory.sv:76.14-84.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                },
+                {
+                  "name": "$procmux$90",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "memory.sv:74.9-74.14|memory.sv:74.5-84.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                },
+                {
+                  "name": "$procmux$95",
+                  "attributes": {
+                    "src": "memory.sv:66.11-66.32|memory.sv:66.7-72.10"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                },
+                {
+                  "name": "$procmux$97",
+                  "attributes": {
+                    "src": "memory.sv:65.18-65.26|memory.sv:65.14-73.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                },
+                {
+                  "name": "$ternary$memory.sv:30$4",
+                  "attributes": {
+                    "src": "memory.sv:30.25-30.62"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                },
+                {
+                  "name": "$ternary$memory.sv:31$6",
+                  "attributes": {
+                    "src": "memory.sv:31.26-31.64"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                },
+                {
+                  "name": "$ternary$memory.sv:48$13",
+                  "attributes": {
+                    "src": "memory.sv:48.24-48.63"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000100000000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$lt",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$lt$memory.sv:56$16",
+                  "attributes": {
+                    "src": "memory.sv:56.13-56.33"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$lt$memory.sv:98$25",
+                  "attributes": {
+                    "src": "memory.sv:98.68-98.94"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$assert",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "EN",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$assert$memory.sv:185$39",
+                  "attributes": {
+                    "src": "memory.sv:185.52-186.41"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$memory.sv:55$15",
+                  "attributes": {
+                    "src": "memory.sv:55.11-55.32"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [256, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [256, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$memory.sv:186$37",
+                  "attributes": {
+                    "src": "memory.sv:186.14-186.40"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000100000000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000100000000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$memory.sv:30$3",
+                  "attributes": {
+                    "src": "memory.sv:30.25-30.46"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$memory.sv:31$5",
+                  "attributes": {
+                    "src": "memory.sv:31.26-31.47"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$memory.sv:34$8",
+                  "attributes": {
+                    "src": "memory.sv:34.27-34.63"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$memory.sv:35$10",
+                  "attributes": {
+                    "src": "memory.sv:35.28-35.64"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$memory.sv:48$12",
+                  "attributes": {
+                    "src": "memory.sv:48.24-48.45"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$memory.sv:66$17",
+                  "attributes": {
+                    "src": "memory.sv:66.11-66.32"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$memory.sv:77$19",
+                  "attributes": {
+                    "src": "memory.sv:77.11-77.32"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$memory.sv:88$21",
+                  "attributes": {
+                    "src": "memory.sv:88.11-88.32"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$assume",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "EN",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$assume$memory.sv:181$38",
+                  "attributes": {
+                    "src": "memory.sv:181.22-182.37"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$and$memory.sv:182$33",
+                  "attributes": {
+                    "src": "memory.sv:182.16-182.35"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$and$memory.sv:185$35",
+                  "attributes": {
+                    "src": "memory.sv:185.9-185.38"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$and$memory.sv:185$36",
+                  "attributes": {
+                    "src": "memory.sv:185.9-185.45"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$and$memory.sv:35$11",
+                  "attributes": {
+                    "src": "memory.sv:35.17-35.64"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$and$memory.sv:98$24",
+                  "attributes": {
+                    "src": "memory.sv:98.18-98.65"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$and$memory.sv:98$26",
+                  "attributes": {
+                    "src": "memory.sv:98.18-98.94"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "hdlname": "\\memory",
+            "top": "00000000000000000000000000000001",
+            "src": "memory.sv:1.1-189.10"
+        }
+      }
+  ]
+}
