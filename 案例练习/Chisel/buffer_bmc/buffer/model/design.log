@@ -1,0 +1,480 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.35+24 (git sha1 7eea04779, aarch64-apple-darwin20.2-clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing Verilog-2005 frontend: AnyConst.sv
+Parsing SystemVerilog input from `AnyConst.sv' to AST representation.
+Storing AST representation for module `$abstract\AnyConst'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: buffer.sv
+Parsing SystemVerilog input from `buffer.sv' to AST representation.
+Storing AST representation for module `$abstract\buffer'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: ResetCounter.sv
+Parsing SystemVerilog input from `ResetCounter.sv' to AST representation.
+Storing AST representation for module `$abstract\ResetCounter'.
+Successfully finished Verilog frontend.
+
+4. Executing PREP pass.
+
+4.1. Executing HIERARCHY pass (managing design hierarchy).
+
+4.2. Executing AST frontend in derive mode using pre-parsed AST for module `\buffer'.
+Generating RTLIL representation for module `\buffer'.
+
+4.2.1. Analyzing design hierarchy..
+Top module:  \buffer
+Parameter \WIDTH = 1
+
+4.2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\AnyConst'.
+Parameter \WIDTH = 1
+Generating RTLIL representation for module `$paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001'.
+
+4.2.3. Executing AST frontend in derive mode using pre-parsed AST for module `\ResetCounter'.
+Generating RTLIL representation for module `\ResetCounter'.
+
+4.2.4. Analyzing design hierarchy..
+Top module:  \buffer
+Used module:     $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001
+Used module:     \ResetCounter
+
+4.2.5. Analyzing design hierarchy..
+Top module:  \buffer
+Used module:     $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001
+Used module:     \ResetCounter
+Removing unused module `$abstract\ResetCounter'.
+Removing unused module `$abstract\buffer'.
+Removing unused module `$abstract\AnyConst'.
+Removed 3 unused modules.
+Module buffer directly or indirectly contains formal properties -> setting "keep" attribute.
+
+4.3. Executing PROC pass (convert processes to netlists).
+
+4.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$ResetCounter.sv:19$83 in module ResetCounter.
+Marked 15 switch rules as full_case in process $proc$buffer.sv:66$27 in module buffer.
+Removed a total of 0 dead cases.
+
+4.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 3 redundant assignments.
+Promoted 8 assignments to connections.
+
+4.3.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\ResetCounter.$proc$ResetCounter.sv:0$85'.
+  Set init value: \flag = 1'0
+  Set init value: \count = 0
+Found init rule in `\buffer.$proc$buffer.sv:0$80'.
+  Set init value: $formal$buffer.sv:293$6_EN = 1'0
+Found init rule in `\buffer.$proc$buffer.sv:0$78'.
+  Set init value: $formal$buffer.sv:289$5_EN = 1'0
+Found init rule in `\buffer.$proc$buffer.sv:0$76'.
+  Set init value: $formal$buffer.sv:285$4_EN = 1'0
+Found init rule in `\buffer.$proc$buffer.sv:0$74'.
+  Set init value: $formal$buffer.sv:281$3_EN = 1'0
+Found init rule in `\buffer.$proc$buffer.sv:0$72'.
+  Set init value: $formal$buffer.sv:277$2_EN = 1'0
+Found init rule in `\buffer.$proc$buffer.sv:0$70'.
+  Set init value: $formal$buffer.sv:273$1_EN = 1'0
+
+4.3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~34 debug messages>
+
+4.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\ResetCounter.$proc$ResetCounter.sv:0$85'.
+Creating decoders for process `\ResetCounter.$proc$ResetCounter.sv:19$83'.
+     1/2: $0\count[31:0]
+     2/2: $0\flag[0:0]
+Creating decoders for process `\buffer.$proc$buffer.sv:0$80'.
+Creating decoders for process `\buffer.$proc$buffer.sv:0$78'.
+Creating decoders for process `\buffer.$proc$buffer.sv:0$76'.
+Creating decoders for process `\buffer.$proc$buffer.sv:0$74'.
+Creating decoders for process `\buffer.$proc$buffer.sv:0$72'.
+Creating decoders for process `\buffer.$proc$buffer.sv:0$70'.
+Creating decoders for process `\buffer.$proc$buffer.sv:271$39'.
+     1/12: $0$formal$buffer.sv:273$1_EN[0:0]$41
+     2/12: $0$formal$buffer.sv:273$1_CHECK[0:0]$40
+     3/12: $0$formal$buffer.sv:277$2_EN[0:0]$43
+     4/12: $0$formal$buffer.sv:277$2_CHECK[0:0]$42
+     5/12: $0$formal$buffer.sv:281$3_EN[0:0]$45
+     6/12: $0$formal$buffer.sv:281$3_CHECK[0:0]$44
+     7/12: $0$formal$buffer.sv:285$4_EN[0:0]$47
+     8/12: $0$formal$buffer.sv:285$4_CHECK[0:0]$46
+     9/12: $0$formal$buffer.sv:289$5_EN[0:0]$49
+    10/12: $0$formal$buffer.sv:289$5_CHECK[0:0]$48
+    11/12: $0$formal$buffer.sv:293$6_EN[0:0]$51
+    12/12: $0$formal$buffer.sv:293$6_CHECK[0:0]$50
+Creating decoders for process `\buffer.$proc$buffer.sv:66$27'.
+     1/10: $0\flag[0:0]
+     2/10: $0\out_empty[0:0]
+     3/10: $0\out_full[0:0]
+     4/10: $0\rdptr[1:0]
+     5/10: $0\wrptr[1:0]
+     6/10: $0\out_data[7:0]
+     7/10: $0\buffer_3[7:0]
+     8/10: $0\buffer_2[7:0]
+     9/10: $0\buffer_1[7:0]
+    10/10: $0\buffer_0[7:0]
+
+4.3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+4.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\ResetCounter.\flag' using process `\ResetCounter.$proc$ResetCounter.sv:19$83'.
+  created $dff cell `$procdff$185' with positive edge clock.
+Creating register for signal `\ResetCounter.\count' using process `\ResetCounter.$proc$ResetCounter.sv:19$83'.
+  created $dff cell `$procdff$186' with positive edge clock.
+Creating register for signal `\buffer.$formal$buffer.sv:273$1_CHECK' using process `\buffer.$proc$buffer.sv:271$39'.
+  created $dff cell `$procdff$187' with positive edge clock.
+Creating register for signal `\buffer.$formal$buffer.sv:273$1_EN' using process `\buffer.$proc$buffer.sv:271$39'.
+  created $dff cell `$procdff$188' with positive edge clock.
+Creating register for signal `\buffer.$formal$buffer.sv:277$2_CHECK' using process `\buffer.$proc$buffer.sv:271$39'.
+  created $dff cell `$procdff$189' with positive edge clock.
+Creating register for signal `\buffer.$formal$buffer.sv:277$2_EN' using process `\buffer.$proc$buffer.sv:271$39'.
+  created $dff cell `$procdff$190' with positive edge clock.
+Creating register for signal `\buffer.$formal$buffer.sv:281$3_CHECK' using process `\buffer.$proc$buffer.sv:271$39'.
+  created $dff cell `$procdff$191' with positive edge clock.
+Creating register for signal `\buffer.$formal$buffer.sv:281$3_EN' using process `\buffer.$proc$buffer.sv:271$39'.
+  created $dff cell `$procdff$192' with positive edge clock.
+Creating register for signal `\buffer.$formal$buffer.sv:285$4_CHECK' using process `\buffer.$proc$buffer.sv:271$39'.
+  created $dff cell `$procdff$193' with positive edge clock.
+Creating register for signal `\buffer.$formal$buffer.sv:285$4_EN' using process `\buffer.$proc$buffer.sv:271$39'.
+  created $dff cell `$procdff$194' with positive edge clock.
+Creating register for signal `\buffer.$formal$buffer.sv:289$5_CHECK' using process `\buffer.$proc$buffer.sv:271$39'.
+  created $dff cell `$procdff$195' with positive edge clock.
+Creating register for signal `\buffer.$formal$buffer.sv:289$5_EN' using process `\buffer.$proc$buffer.sv:271$39'.
+  created $dff cell `$procdff$196' with positive edge clock.
+Creating register for signal `\buffer.$formal$buffer.sv:293$6_CHECK' using process `\buffer.$proc$buffer.sv:271$39'.
+  created $dff cell `$procdff$197' with positive edge clock.
+Creating register for signal `\buffer.$formal$buffer.sv:293$6_EN' using process `\buffer.$proc$buffer.sv:271$39'.
+  created $dff cell `$procdff$198' with positive edge clock.
+Creating register for signal `\buffer.\buffer_0' using process `\buffer.$proc$buffer.sv:66$27'.
+  created $dff cell `$procdff$199' with positive edge clock.
+Creating register for signal `\buffer.\buffer_1' using process `\buffer.$proc$buffer.sv:66$27'.
+  created $dff cell `$procdff$200' with positive edge clock.
+Creating register for signal `\buffer.\buffer_2' using process `\buffer.$proc$buffer.sv:66$27'.
+  created $dff cell `$procdff$201' with positive edge clock.
+Creating register for signal `\buffer.\buffer_3' using process `\buffer.$proc$buffer.sv:66$27'.
+  created $dff cell `$procdff$202' with positive edge clock.
+Creating register for signal `\buffer.\out_full' using process `\buffer.$proc$buffer.sv:66$27'.
+  created $dff cell `$procdff$203' with positive edge clock.
+Creating register for signal `\buffer.\out_empty' using process `\buffer.$proc$buffer.sv:66$27'.
+  created $dff cell `$procdff$204' with positive edge clock.
+Creating register for signal `\buffer.\out_data' using process `\buffer.$proc$buffer.sv:66$27'.
+  created $dff cell `$procdff$205' with positive edge clock.
+Creating register for signal `\buffer.\wrptr' using process `\buffer.$proc$buffer.sv:66$27'.
+  created $dff cell `$procdff$206' with positive edge clock.
+Creating register for signal `\buffer.\rdptr' using process `\buffer.$proc$buffer.sv:66$27'.
+  created $dff cell `$procdff$207' with positive edge clock.
+Creating register for signal `\buffer.\flag' using process `\buffer.$proc$buffer.sv:66$27'.
+  created $dff cell `$procdff$208' with positive edge clock.
+
+4.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `ResetCounter.$proc$ResetCounter.sv:0$85'.
+Found and cleaned up 2 empty switches in `\ResetCounter.$proc$ResetCounter.sv:19$83'.
+Removing empty process `ResetCounter.$proc$ResetCounter.sv:19$83'.
+Removing empty process `buffer.$proc$buffer.sv:0$80'.
+Removing empty process `buffer.$proc$buffer.sv:0$78'.
+Removing empty process `buffer.$proc$buffer.sv:0$76'.
+Removing empty process `buffer.$proc$buffer.sv:0$74'.
+Removing empty process `buffer.$proc$buffer.sv:0$72'.
+Removing empty process `buffer.$proc$buffer.sv:0$70'.
+Found and cleaned up 6 empty switches in `\buffer.$proc$buffer.sv:271$39'.
+Removing empty process `buffer.$proc$buffer.sv:271$39'.
+Found and cleaned up 26 empty switches in `\buffer.$proc$buffer.sv:66$27'.
+Removing empty process `buffer.$proc$buffer.sv:66$27'.
+Cleaned up 34 empty switches.
+
+4.3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ResetCounter.
+Optimizing module $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001.
+Optimizing module buffer.
+<suppressed ~7 debug messages>
+
+4.4. Executing FUTURE pass.
+
+4.5. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ResetCounter.
+Optimizing module $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001.
+Optimizing module buffer.
+
+4.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ResetCounter..
+Finding unused cells or wires in module $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001..
+Finding unused cells or wires in module \buffer..
+Removed 1 unused cells and 88 unused wires.
+<suppressed ~4 debug messages>
+
+4.7. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001...
+Checking module ResetCounter...
+Checking module buffer...
+Found and reported 0 problems.
+
+4.8. Executing OPT pass (performing simple optimizations).
+
+4.8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001.
+Optimizing module ResetCounter.
+Optimizing module buffer.
+
+4.8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001'.
+Finding identical cells in module `\ResetCounter'.
+Finding identical cells in module `\buffer'.
+<suppressed ~9 debug messages>
+Removed a total of 3 cells.
+
+4.8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \ResetCounter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \buffer..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~25 debug messages>
+
+4.8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001.
+  Optimizing cells in module \ResetCounter.
+  Optimizing cells in module \buffer.
+Performed a total of 0 changes.
+
+4.8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001'.
+Finding identical cells in module `\ResetCounter'.
+Finding identical cells in module `\buffer'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+4.8.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001..
+Finding unused cells or wires in module \ResetCounter..
+Finding unused cells or wires in module \buffer..
+Removed 0 unused cells and 5 unused wires.
+<suppressed ~1 debug messages>
+
+4.8.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001.
+Optimizing module ResetCounter.
+Optimizing module buffer.
+
+4.8.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.8.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \ResetCounter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \buffer..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~24 debug messages>
+
+4.8.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001.
+  Optimizing cells in module \ResetCounter.
+  Optimizing cells in module \buffer.
+Performed a total of 0 changes.
+
+4.8.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001'.
+Finding identical cells in module `\ResetCounter'.
+Finding identical cells in module `\buffer'.
+Removed a total of 0 cells.
+
+4.8.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001..
+Finding unused cells or wires in module \ResetCounter..
+Finding unused cells or wires in module \buffer..
+
+4.8.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001.
+Optimizing module ResetCounter.
+Optimizing module buffer.
+
+4.8.14. Finished OPT passes. (There is nothing left to do.)
+
+4.9. Executing WREDUCE pass (reducing word size of cells).
+Removed top 31 bits (of 32) from port B of cell ResetCounter.$add$ResetCounter.sv:24$84 ($add).
+Removed top 1 bits (of 2) from port B of cell buffer.$add$buffer.sv:38$7 ($add).
+Removed top 1 bits (of 2) from port B of cell buffer.$add$buffer.sv:44$18 ($add).
+Removed top 1 bits (of 2) from port A of cell buffer.$eq$buffer.sv:45$19 ($eq).
+Removed top 1 bits (of 2) from port A of cell buffer.$eq$buffer.sv:77$29 ($eq).
+Removed top 7 bits (of 8) from port B of cell buffer.$eq$buffer.sv:282$56 ($eq).
+
+4.10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001..
+Finding unused cells or wires in module \ResetCounter..
+Finding unused cells or wires in module \buffer..
+
+4.11. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+4.12. Executing OPT pass (performing simple optimizations).
+
+4.12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001.
+Optimizing module ResetCounter.
+Optimizing module buffer.
+
+4.12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001'.
+Finding identical cells in module `\ResetCounter'.
+Finding identical cells in module `\buffer'.
+Removed a total of 0 cells.
+
+4.12.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001..
+Finding unused cells or wires in module \ResetCounter..
+Finding unused cells or wires in module \buffer..
+
+4.12.4. Finished fast OPT passes.
+
+4.13. Printing statistics.
+
+=== $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001 ===
+
+   Number of wires:                  2
+   Number of wire bits:              2
+   Number of public wires:           2
+   Number of public wire bits:       2
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $anyconst                       1
+
+=== ResetCounter ===
+
+   Number of wires:                 10
+   Number of wire bits:            165
+   Number of public wires:           6
+   Number of public wire bits:      68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $add                            1
+     $dff                            2
+     $mux                            3
+
+=== buffer ===
+
+   Number of wires:                111
+   Number of wire bits:            320
+   Number of public wires:          37
+   Number of public wire bits:     128
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                105
+     $add                            2
+     $and                           14
+     $assert                         1
+     $assume                         5
+     $dff                           21
+     $eq                             9
+     $logic_not                      3
+     $lt                             2
+     $mux                           39
+     $not                            5
+     $or                             2
+     $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001      1
+     ResetCounter                    1
+
+=== design hierarchy ===
+
+   buffer                            1
+     $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001      1
+     ResetCounter                    1
+
+   Number of wires:                123
+   Number of wire bits:            487
+   Number of public wires:          45
+   Number of public wire bits:     198
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                110
+     $add                            3
+     $and                           14
+     $anyconst                       1
+     $assert                         1
+     $assume                         5
+     $dff                           23
+     $eq                             9
+     $logic_not                      3
+     $lt                             2
+     $mux                           42
+     $not                            5
+     $or                             2
+
+4.14. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001...
+Checking module ResetCounter...
+Checking module buffer...
+Found and reported 0 problems.
+
+5. Executing HIERARCHY pass (managing design hierarchy).
+
+5.1. Analyzing design hierarchy..
+Top module:  \buffer
+Used module:     \ResetCounter
+Used module:     $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001
+
+5.2. Analyzing design hierarchy..
+Top module:  \buffer
+Used module:     \ResetCounter
+Used module:     $paramod\AnyConst\WIDTH=s32'00000000000000000000000000000001
+Removed 0 unused modules.
+Module buffer directly or indirectly contains formal properties -> setting "keep" attribute.
+
+6. Executing jny backend.
+
+7. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+End of script. Logfile hash: e98bad19fc, CPU: user 0.04s system 0.03s
+Yosys 0.35+24 (git sha1 7eea04779, aarch64-apple-darwin20.2-clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 20% 6x opt_expr (0 sec), 18% 5x opt_clean (0 sec), ...

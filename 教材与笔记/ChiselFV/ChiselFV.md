@@ -20,5 +20,13 @@ sbt "runMain gcdCheck"
 
 
 
+```scala
+assume()
+assert()
+anyconst()
+
+
+```
+
 
 

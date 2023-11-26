@@ -72,6 +72,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/memoryCheck$delayedInit$body.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	adderMain$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/adderMain$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	bufferCheck$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/bufferCheck$delayedInit$body.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	memoryCheck$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/memoryCheck$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	memory$.class[0m
@@ -108,6 +110,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/main_control$$anon$2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	memory$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/memory$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	bufferCheck.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/bufferCheck.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	buffer$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/buffer$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	elevatorMain$.class[0m
@@ -122,6 +126,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/memoryMain$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	philo.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/philo.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	bufferCheck$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/bufferCheck$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	adderMain.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/target/scala-2.12/classes/adderMain.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	philoMain$.class[0m

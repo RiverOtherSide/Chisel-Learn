@@ -60,3 +60,8 @@
 1700667899803:testOnly bufferTest
 1700668155381:runMain memoryCheck
 1700668315628:testOnly bufferTest -- -DwriteVcd=1
+1700733164024:runMain bufferCheck
+1700733179663:testOnly bufferTest
+1700733291577:runMain bufferCheck
+1700733365620:testOnly bufferTest
+1700733439703:runMain bufferCheck

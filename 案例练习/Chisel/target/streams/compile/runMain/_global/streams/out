@@ -1,11 +1,11 @@
-[0m[[0m[31merror[0m] [0m[0mchisel3.package$ExpectedChiselTypeException: reg type 'memory.mem_?: Wire[UInt<1>[4]]' must be a Chisel type, not hardware[0m
+[0m[[0m[31merror[0m] [0m[0mchisel3.package$ExpectedChiselTypeException: wire type 'Bool(false)' must be a Chisel type, not hardware[0m
 [0m[[0m[31merror[0m] [0m[0m	at ... ()[0m
-[0m[[0m[31merror[0m] [0m[0m	at memory.$anonfun$mem$2(memory.scala:20)[0m
+[0m[[0m[31merror[0m] [0m[0m	at buffer.$anonfun$mark_vld$2(buffer.scala:57)[0m
 [0m[[0m[31merror[0m] [0m[0m	at chisel3.internal.prefix$.apply(prefix.scala:48)[0m
-[0m[[0m[31merror[0m] [0m[0m	at memory.$anonfun$mem$1(memory.scala:20)[0m
+[0m[[0m[31merror[0m] [0m[0m	at buffer.$anonfun$mark_vld$1(buffer.scala:57)[0m
 [0m[[0m[31merror[0m] [0m[0m	at chisel3.internal.plugin.package$.autoNameRecursively(package.scala:33)[0m
-[0m[[0m[31merror[0m] [0m[0m	at memory.<init>(memory.scala:20)[0m
-[0m[[0m[31merror[0m] [0m[0m	at memoryCheck$.$anonfun$new$31(memory.scala:75)[0m
+[0m[[0m[31merror[0m] [0m[0m	at buffer.<init>(buffer.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at bufferCheck$.$anonfun$new$40(buffer.scala:89)[0m
 [0m[[0m[31merror[0m] [0m[0m	at ... ()[0m
 [0m[[0m[31merror[0m] [0m[0m	at ... (Stack trace trimmed to user code only. Rerun with --full-stacktrace to see the full stack trace)[0m
-[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrunMain[0m) chisel3.package$ExpectedChiselTypeException: reg type 'memory.mem_?: Wire[UInt<1>[4]]' must be a Chisel type, not hardware[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrunMain[0m) chisel3.package$ExpectedChiselTypeException: wire type 'Bool(false)' must be a Chisel type, not hardware[0m
