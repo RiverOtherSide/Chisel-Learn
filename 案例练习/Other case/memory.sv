@@ -46,7 +46,7 @@ asm2: assume property(@(posedge clk) (in_wr && in_rd) == 0);
 always @(posedge clk) begin
     if(~rst_n)
         random_data <= {WIDTH{1'b0}};
-    else if(in_wr && (in_wr_addr == random_addr) && ( random_addr<(DEPTH/2)))
+    else if(in_wr && (in_wr_addr == random_addr) && (random_addr<(DEPTH/2)))
         random_data <= in_data;
     else if(in_wr && (in_wr_addr == random_addr))
         random_data <= {in_data[WIDTH/2-1: 0],in_data[WIDTH-1: WIDTH/2]};

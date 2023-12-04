@@ -18,7 +18,8 @@ class elevator extends Module{
   val on :: off :: Nil = Enum(2)
 
   val buttons = RegInit(VecInit.fill(4)(off))
-  val location = RegInit(UInt(2.W),io.init)
+//  无法使用input对reg进行初始化，要用常数进行初始化
+  val location = RegInit(UInt(2.W),0.U)
   val direction = RegInit(UInt(1.W),up)
   val door = RegInit(UInt(2.W),open)
   val open_next = RegInit(Bool(),false.B)
@@ -121,7 +122,7 @@ class main_control extends Module{
   val open :: opening :: closed :: closing :: Nil = Enum(4)
   val on :: off :: Nil = Enum(2)
 
-  val loactions = RegInit(UInt(2.W),io.init1)
+  val locations = RegInit(UInt(2.W),1.U)
   val direction = RegInit(UInt(1.W),up)
   val up_floor_buttons = RegInit(VecInit.fill(4)(off))
   val down_floor_buttons = RegInit(VecInit.fill(4)(off))
@@ -140,7 +141,8 @@ class main_control extends Module{
   top(1) := top(2) || buttons(2)
   top(0) := top(1) || buttons(1)
 
-//  val button_below,button_above
+  val button_below,button_above = Wire(Bool())
+  button_below := ((locations(1)))
 
 
 
