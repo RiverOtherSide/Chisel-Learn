@@ -1,7 +1,0 @@
-# running in buffer/src/
-read -sv AnyConst.sv buffer.sv ResetCounter.sv
-prep -top buffer -nordff
-
-hierarchy -smtcheck
-write_jny -no-connections ../model/design.json
-write_rtlil ../model/design.il

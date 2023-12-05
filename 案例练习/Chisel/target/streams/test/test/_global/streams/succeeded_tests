@@ -1,8 +1,10 @@
 #Successful Tests
-#Thu Nov 23 17:56:59 CST 2023
+#Mon Dec 04 23:26:49 CST 2023
 philoTest=1698941638870
 adderTest=1700142620398
+elevatorTest=1701683653290
+matrixTest=1701703609677
 bufferTest=1700733419958
 philosopherTest=1698938818847
-exerciseTest=1699967746773
+exerciseTest=1701673728802
 gcdTest=1700146974304

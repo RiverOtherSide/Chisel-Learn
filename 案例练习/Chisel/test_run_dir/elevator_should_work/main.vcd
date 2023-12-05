@@ -1,0 +1,490 @@
+$date
+2023-12-04T09:54+0000
+$end
+$version
+0.2
+$end
+$comment
+
+$end
+$timescale 1ns  $end
+$scope module main $end
+ $var wire 1 ( io_open_next $end
+ $var wire 4 * io_random_up $end
+ $var wire 1 , io_stop_next $end
+ $var wire 1 5 io_random $end
+ $var wire 1 ; io_movement $end
+ $var wire 1 < io_inc $end
+ $var wire 1 > io_dec $end
+ $var wire 1 H e1 $end
+ $var wire 1 N io_continue $end
+ $var wire 1 O io_direction0 $end
+ $var wire 1 S clock $end
+ $var wire 2 W io_location $end
+ $var wire 1 ] io_r_stop $end
+ $var wire 4 c io_random_push1 $end
+ $var wire 1 h ec $end
+ $var wire 4 j io_random_down $end
+ $var wire 2 n io_door $end
+ $var wire 1 p reset $end
+  $scope module ec $end
+   $var wire 1 ! up_floor_buttons_0 $end
+   $var wire 1 $ top_1 $end
+   $var wire 1 ' io_stop_next $end
+   $var wire 1 - stop_next $end
+   $var wire 1 / bottom_2 $end
+   $var wire 2 1 locations $end
+   $var wire 1 2 direction $end
+   $var wire 1 4 down_floor_buttons_1 $end
+   $var wire 1 6 buttons_1 $end
+   $var wire 4 7 io_random_up $end
+   $var wire 1 = up_floor_buttons_2 $end
+   $var wire 1 A bottom_1 $end
+   $var wire 1 D top_0 $end
+   $var wire 1 F continue $end
+   $var wire 4 J io_random_down $end
+   $var wire 1 L io_continue $end
+   $var wire 1 M buttons_3 $end
+   $var wire 1 R button_above $end
+   $var wire 1 T clock $end
+   $var wire 1 V buttons_0 $end
+   $var wire 1 X down_floor_buttons_0 $end
+   $var wire 1 Y up_floor_buttons_1 $end
+   $var wire 1 Z top_2 $end
+   $var wire 1 \ down_floor_buttons_3 $end
+   $var wire 1 a bottom_0 $end
+   $var wire 1 d io_inc $end
+   $var wire 1 e io_dec $end
+   $var wire 1 i down_floor_buttons_2 $end
+   $var wire 1 k buttons_2 $end
+   $var wire 1 o button_below $end
+   $var wire 1 q up_floor_buttons_3 $end
+   $var wire 1 r reset $end
+  $upscope $end
+  $scope module e1 $end
+   $var wire 1 " top_1 $end
+   $var wire 1 # button_below $end
+   $var wire 1 % inc $end
+   $var wire 1 & open_next $end
+   $var wire 1 ) dec $end
+   $var wire 1 + direction $end
+   $var wire 1 . io_open_next $end
+   $var wire 1 0 io_stop_next $end
+   $var wire 1 3 buttons_1 $end
+   $var wire 1 8 top_0 $end
+   $var wire 2 9 location $end
+   $var wire 1 : bottom_1 $end
+   $var wire 1 ? start_moving $end
+   $var wire 1 @ io_random $end
+   $var wire 1 B io_continue $end
+   $var wire 1 C clock $end
+   $var wire 1 E buttons_3 $end
+   $var wire 4 G io_random_push $end
+   $var wire 2 I io_location $end
+   $var wire 1 K io_direction0 $end
+   $var wire 1 P buttons_0 $end
+   $var wire 1 Q io_dec $end
+   $var wire 1 U bottom_0 $end
+   $var wire 1 [ top_2 $end
+   $var wire 1 ^ io_inc $end
+   $var wire 1 _ movement $end
+   $var wire 1 ` button_above $end
+   $var wire 2 b io_door $end
+   $var wire 1 f buttons_2 $end
+   $var wire 1 g stop_moving $end
+   $var wire 1 l bottom_2 $end
+   $var wire 1 m io_r_stop $end
+   $var wire 2 s door $end
+   $var wire 1 t reset $end
+   $var wire 1 u io_movement $end
+  $upscope $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+0X
+0C
+0;
+0&
+0o
+0Z
+0R
+0=
+b0000 j
+0q
+0i
+0T
+0"
+0k
+0V
+0N
+b00 W
+0m
+0e
+0P
+b00 n
+03
+0g
+05
+0-
+0a
+0L
+b00 b
+0D
+0/
+b0000 G
+0[
+0F
+b0000 *
+0)
+0r
+0]
+0H
+b00 I
+0+
+0@
+0t
+0_
+0B
+0%
+0Y
+0<
+0'
+0p
+0S
+b0000 7
+0>
+06
+0!
+b00 s
+0U
+0M
+08
+0#
+b00 9
+0l
+0d
+0O
+0:
+02
+0f
+0Q
+b0000 J
+04
+0h
+0`
+0K
+0.
+b0000 c
+0E
+00
+0(
+b00 1
+0\
+0?
+0^
+0A
+0,
+0$
+0u
+$end
+#0
+1?
+1r
+1`
+1"
+1U
+18
+1l
+1p
+1[
+1:
+1t
+#1
+13
+1f
+0`
+1<
+1%
+1C
+1S
+1E
+0[
+1T
+0?
+0"
+b01 1
+0U
+1d
+08
+0l
+0:
+1^
+1P
+#6
+0T
+b1001 c
+0r
+0C
+1@
+15
+b1001 G
+0S
+1]
+0p
+1m
+0t
+#11
+1`
+0<
+0%
+1C
+1S
+0E
+1[
+b11 b
+1T
+1?
+1"
+b10 1
+1U
+b11 s
+0d
+18
+1l
+1:
+0^
+0P
+b11 n
+#16
+0T
+0C
+0S
+#21
+1T
+1C
+b10 s
+1S
+b10 b
+b10 n
+#26
+0T
+0C
+0S
+#31
+1T
+1u
+1C
+1g
+1S
+1_
+1;
+#36
+0T
+0C
+0S
+#41
+0u
+1<
+1%
+1C
+0g
+1S
+1T
+1d
+1#
+b01 9
+b01 W
+1^
+b01 I
+0_
+0;
+#46
+0T
+0C
+0S
+#51
+1T
+1u
+0<
+0%
+b11 1
+1C
+1g
+0d
+1S
+0^
+1_
+1;
+#56
+0T
+0C
+0S
+#61
+0u
+1<
+1%
+1C
+0g
+1S
+1T
+1d
+12
+b10 9
+b10 W
+1^
+b10 I
+0_
+0;
+#66
+0T
+0C
+0S
+#71
+1T
+1u
+0<
+0%
+b00 1
+1C
+1g
+0d
+02
+1S
+0^
+1_
+1;
+#76
+0T
+0C
+0S
+#81
+0u
+0`
+1<
+1%
+1C
+0g
+1.
+1&
+1S
+1(
+1T
+0?
+1d
+b11 9
+b11 W
+1^
+b11 I
+0_
+0;
+#86
+0T
+0C
+0S
+#91
+0<
+0%
+1C
+1S
+1K
+b01 b
+1T
+1?
+b01 1
+0d
+b01 s
+1+
+1O
+0^
+b01 n
+#96
+0T
+0C
+0S
+#101
+1T
+1C
+0.
+b00 s
+0&
+1S
+0(
+b00 b
+b00 n
+#106
+0T
+0C
+0S
+#111
+1T
+1C
+b11 s
+1S
+b11 b
+b11 n
+#116
+0T
+0C
+0S
+#121
+1T
+1C
+b10 s
+1S
+b10 b
+b10 n
+#126
+0T
+0C
+0S
+#131
+1T
+1u
+1C
+1g
+1S
+1_
+1;
+#136
+0T
+0C
+0S
+#141
+0u
+1`
+1Q
+1C
+0g
+1S
+1>
+1)
+1T
+1e
+b10 9
+b10 W
+b10 I
+0_
+0;
+#146
+0T
+0C
+0S
+#151
+0)
+1T
+1u
+0Q
+b00 1
+1C
+1g
+12
+1S
+0e
+0>
+1_
+1;
+#156
+b0000 c
+05
+0S
+0]

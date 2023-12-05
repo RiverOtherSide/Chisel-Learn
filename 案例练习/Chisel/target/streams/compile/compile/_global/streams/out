@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/src/main/scala/memory.scala:38:8: counterCheck is already defined as object counterCheck[0m
-[0m[[0m[31merror[0m] [0m[0mobject counterCheck extends App {[0m
-[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tangzhijiang/Desktop/我/研究生/大四上/Chisel-Learn/案例练习/Chisel/src/main/scala/matrix.scala:40:17: ';' expected but ',' found.[0m
+[0m[[0m[31merror[0m] [0m[0m                ,offset(io.row-1.U)+ io.col))-1.U[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

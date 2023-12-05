@@ -9,16 +9,21 @@ import chisel3.util._
 class exercise extends Module{
   val io = IO(new Bundle() {
     val a = Input(UInt(8.W))
-    val out = Output(UInt(4.W))
+    val out = Output(Vec(4,Bool()))
+    val random_up = Input(UInt(4.W))
   })
   val open::opening::closed::closing::Nil = Enum(4)
+  val off::on::Nil = Enum(2)
 //  import elevator
 //  val buttons = RegInit(VecInit.fill(4)(closed))
-  val bottom = Wire(Vec(3,UInt(1.W)))
+//  val bottom = Wire(Vec(3,UInt(1.W)))
+  val up_floor_buttons = RegInit(VecInit.fill(4)(false.B))
+  io.out := up_floor_buttons
+  for(i <- 0 until 3){
+    when(io.random_up(i.U).asBool){
+      up_floor_buttons(i.U) := on
+    }
+  }
 
-  bottom(0) := 1.U
-  bottom(1) := bottom(0) | 0.U
-  bottom(2) := bottom(1) | 0.U
-  io.out := bottom(2)===0.U | 1.U
 
 }

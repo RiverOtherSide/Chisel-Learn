@@ -11,6 +11,7 @@ class exerciseTest extends AnyFlatSpec with ChiselScalatestTester {
     test(new exercise) { dut =>
       println(dut.io.out.peek())
       dut.io.a.poke("b11110000".U)
+      dut.io.random_up.poke("b1111".U)
       dut.clock.step(1)
       println(dut.io.out.peek())
     }

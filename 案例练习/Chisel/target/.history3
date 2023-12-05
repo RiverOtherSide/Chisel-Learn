@@ -65,3 +65,8 @@
 1700733291577:runMain bufferCheck
 1700733365620:testOnly bufferTest
 1700733439703:runMain bufferCheck
+1701673430149:testOnly exerciseTest
+1701680487107:testOnly elevatorTest
+1701681753743:testOnly elevatorTest -- -DwriteVcd=1
+1701698544846:testOnly matrixTest
+1701698891035:testOnly matrixTest -- -DwriteVcd=1
